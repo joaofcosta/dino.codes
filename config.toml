@@ -1,4 +1,19 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "dino (dot) codes"
 theme = "hyde"
+
+[params]
+description = "General banter about Software Development."
+
+[[menu.main]]
+name = "Github"
+url = "https://github.com/joaofcosta/"
+
+[[menu.main]]
+name = "Twitter"
+url = "https://twitter.com/joaofcosta_"
+
+[[menu.main]]
+name = "Medium"
+url = "https://medium.com/@dinojoaocosta"
