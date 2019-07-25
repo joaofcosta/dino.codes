@@ -2,6 +2,8 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "dino (dot) codes"
 theme = "hyde"
+pygmentsCodeFences = true
+pygmentsStyle = "friendly"
 
 [params]
 description = "General banter about Software Development."
