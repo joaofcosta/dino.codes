@@ -1,9 +1,13 @@
-baseURL = "http://example.org/"
+baseURL = "http://www.dino.codes/"
 languageCode = "en-us"
 title = "dino (dot) codes"
 theme = "hyde"
 pygmentsCodeFences = true
-pygmentsStyle = "friendly"
+pygmentsStyle = "monokailight"
+googleAnalytics = "UA-144751197-1"
+
+[pygmentsOptions]
+linenos = true
 
 [params]
 description = "General banter about Software Development."
