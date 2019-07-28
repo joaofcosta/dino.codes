@@ -10,7 +10,7 @@ googleAnalytics = "UA-144751197-1"
 linenos = true
 
 [params]
-description = "General banter about Software Development."
+description = "Thoughts and opinions on Software Development and Music Production."
 
 [[menu.main]]
 name = "Github"
