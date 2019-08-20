@@ -1,1 +1,4 @@
 .DS_Store
+
+# Folder where the public files live.
+public/
