@@ -1,11 +1,7 @@
-html {
-  font-family: "Source Sans Pro";
-}
+html { font-family: "Source Sans Pro"; }
 
-h1 {
-  font-family: "Libre Baskerville";
-}
+.sidebar-about h1 { font-family: "Playfair Display"; }
 
-code {
-  font-family: "Fira Mono";
-}
+h1 { font-family: "Playfair Display"; }
+
+code { font-family: "Fira Mono"; }
