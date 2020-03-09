@@ -188,3 +188,8 @@ If you're reading this for a quick solution and don't really known what's going 
 [reading up on asyncio](https://realpython.com/async-io-python/).
 
 I hope this blogpost has helped you! 👋
+
+---
+
+* [Reddit Discussion](https://www.reddit.com/r/Python/comments/ffwri2/mocking_asynchronous_functions_in_python_dino_dot/)
+* [Hackernews Discussion](https://news.ycombinator.com/item?id=22526405)
