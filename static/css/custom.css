@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Playfair+Display|Fira+Mono');
+
+/* html { font-family: "Source Sans Pro"; } */
+
+h1, h2 { font-family: "Playfair Display"; }
+
+pre { font-family: "Fira Mono"; }
