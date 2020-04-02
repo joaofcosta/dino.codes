@@ -25,6 +25,31 @@ googleAnalytics = "UA-144751197-1"
   # for example you may want to include external JS library.
   # customJS = ["js/abc.js", "js/xyz.js", "https://code.jquery.com/jquery-3.4.1.js"] featherIconsCDN = true
 
+  # Image to be displayed in Twitter Card.
+  images = ["favicon.ico"]
+
+# Links just below the website's title.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+# Social links to the right of the website title.
 [[params.social]]
 name = "Soundcloud"
 icon = "music"
@@ -44,3 +69,7 @@ url = "https://github.com/joaofcosta/"
 # name = "Medium"
 # icon = "book"
 # url = "https://medium.com/@dinojoaocosta"
+
+# Enable tags.
+[taxonomies]
+   tag = "tags"
