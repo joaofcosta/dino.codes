@@ -3,9 +3,10 @@ title: "Mocking Asynchronous Functions In Python"
 date: 2020-02-18T22:12:15Z
 draft: false
 description: "Post on how to mock asynchronous (asyncio) functions in Python."
+tags: ["Python"]
 ---
 
-### Introduction
+## Introduction
 
 You might have already heard about Python's `asyncio` module, it allows you to easily run concurrent
 code using Python.
@@ -23,7 +24,7 @@ As such, let's take a quick look into how we can easily test asynchronous functi
 [AsyncMock](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.AsyncMock)
 in Python 3.8
 
-### What we're mocking
+## What we're mocking
 
 In this example, we're going to be mocking a simple function which adds two integers, its parameters,
 while resorting to `asyncio.sleep` to simulate IO heavy tasks, for example, HTTP requests or a
@@ -37,8 +38,7 @@ async def sum(x, y):
     return x + y
 ```
 
-### Mocking it
-
+## Mocking it
 
 Asynchronous functions in Python return what's known as a `Future` object, which contains the
 result of calling the asynchronous function.
@@ -123,7 +123,7 @@ Finally, notice now how we're calling `mock_sum.set_result(4)`. If we want the m
 different values we now just need to change the value provided to `set_result` instead of having to
 create multiple fixture for different tests!
 
-### Mocking It In Python 3.8
+## Mocking It In Python 3.8
 
 The code above only works for versions of Python <3.8. In Python 3.8 we need to change the code
 slightly because
@@ -177,7 +177,7 @@ Notice that the only change compared to the previous section is that we now set 
 attribute of the mock instead of calling the `set_result` function seeing as we're now working with
 `AsyncMock` instead of `Future`. Aside that, the test function looks exactly the same.
 
-### Conclusion
+## Conclusion
 
 In conclusion mocking asynchronous functions in Python is actually easier than I expected at first,
 mostly because I didn't really understood how asyncio worked. After some reading and experimentation

@@ -5,6 +5,7 @@ description: "Post about how Python's tuple syntax can make you run around tryin
 avoided."
 draft: false
 truncated: false
+tags: ["Python"]
 ---
 
 Creating a list or a set with only one element, in Python, is pretty straight forward:

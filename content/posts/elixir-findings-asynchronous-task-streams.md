@@ -5,6 +5,7 @@ description: "Blogpost documenting how to use Task.async_stream/2 to run tasks i
 Elixir"
 draft: false
 truncated: false
+tags: ["Elixir"]
 ---
 
 The other day I was solving an Exercism.io exercise that involved calculating
