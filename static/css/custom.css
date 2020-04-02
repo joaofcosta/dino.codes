@@ -71,3 +71,9 @@ pre {
 .header nav.social a:hover {
   color: var(--headline-color);
 }
+
+/* Tags at the bottom of the post page */
+.post .tags a {
+    color: var(--button-color);
+    border-color: var(--button-color);
+}
