@@ -1,4 +1,4 @@
-baseURL = "http://www.dino.codes/"
+baseURL = "https://dino.codes/"
 languageCode = "en-us"
 title = "dino (dot) codes"
 theme = "ink"
