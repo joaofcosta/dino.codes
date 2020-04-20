@@ -13,10 +13,10 @@ forgetting.
 
 One of those concepts is Tail Call Optimization. In short, Tail Call Optimization allows you to
 reduce the number of stack frames your program needs to maintain, in the call stack, for a
-tail recursive function, i.e., for a recursive function where the recursive call is the last call
-of the function.
+recursive function by making the recursive call the last call of the function, thus transforming it
+into a tail recursive function.
 
-## A simple tail recursive function
+## A simple recursive function
 
 I'm going to use a very simple example to demonstrate how this type of optimization can be achieved.
 In this example I'm going to use the factorial function since we can easily write it in a recursive
@@ -29,11 +29,12 @@ defmodule Factorial do
 end
 ```
 
-As one can see, the above fuction (`Factorial.compute/1`) is tail recursive because the recursive
-call is the last call done by the function itself, namely `compute(number - 1)`.
+As one can see, the above fuction (`Factorial.compute/1`) is recursive, one can see the call to
+`compute(number - 1)`, however the last function call is actually the multiplication (thanks
+[herulume](https://twitter.com/herulume)).
 
-Since this function is tail recursive, whenever we call it with a value greater than 0 the system
-that's running it will have to keep multiple function stacks.
+Since this is a recursive function, whenever we call it with a value greater than 0 the system
+that's running it will have to keep multiple function call stacks.
 
 Let's illustrate what happens when we call `Factorial.compute(5)` in order to better understand
 what I mean:
@@ -81,7 +82,8 @@ end
 
 Notice how `number * compute(number - 1)` was changed to `compute(number - 1, number *
 accumulator)`. The `number` value is now multiplied with the accumulator and then passed into the
-recursive call.
+recursive call and the function can now be considered a tail recursive function since the last call
+of the function is the recursive call itself.
 
 Let's do the same exercise we did with the non optimized version above and let's illustrate,
 once again, what calling `Factorial.compute(5)` would look like with this version:
@@ -167,7 +169,8 @@ It's fun to review these type of concepts and try to apply them in a more pratic
 to fully understand how they work and what are its impacts.
 
 As for Tail Call Optimization I'd say it's a nice, easy and simple way to reduce memory usage in
-tail recursive functions, something that might be a very common occurrence in Elixir. As such, if
+recursive functions, given that you're able to transform them into tail recursive functions,
+something that might be a very common occurrence in Elixir. As such, if
 you do happen to come across an Elixir application, or if you happen to work with one, try to check
 if you can apply this concept in some way.
 
