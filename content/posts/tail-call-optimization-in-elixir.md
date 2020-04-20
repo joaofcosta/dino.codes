@@ -180,5 +180,5 @@ all I'd encourage you to express it by following one of the links below!
 
 ---
 
-* Reddit Discussion (Will link soon)
-* Hackernews Discussion (Will link soon)
+* [Reddit Discussion](https://www.reddit.com/r/elixir/comments/g4uemu/tail_call_optimization_in_elixir/)
+* [Hackernews Discussion](https://news.ycombinator.com/item?id=22924404)
