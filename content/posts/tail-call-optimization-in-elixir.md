@@ -168,11 +168,14 @@ I'd say these are great results!
 It's fun to review these type of concepts and try to apply them in a more pratical scenario in order
 to fully understand how they work and what are its impacts.
 
-As for Tail Call Optimization I'd say it's a nice, easy and simple way to reduce memory usage in
-recursive functions, given that you're able to transform them into tail recursive functions,
-something that might be a very common occurrence in Elixir. As such, if
-you do happen to come across an Elixir application, or if you happen to work with one, try to check
-if you can apply this concept in some way.
+As for Tail Call Optimization I'd say it might be a nice, easy and simple way to reduce memory usage
+in recursive functions, given that you're able to transform them into tail recursive functions,
+something that might be a very common occurrence in Elixir. I say it might, because converting a
+body recursive function into a tail recursive function is not always the correct choice, plase read
+[The Seven Myths of Erlang Performance](http://erlang.org/doc/efficiency_guide/myths.html) and Fred
+Hebert's [Erlang's Tail Recursion is Not a Silver
+Bullet](https://ferd.ca/erlang-s-tail-recursion-is-not-a-silver-bullet.html) to better understand
+why.
 
 I'm planning on releasing more of these blog posts where I dive into some software
 development concept and try to explain it using Elixir so stick around and don't forget to keep
